@@ -1,1 +1,14 @@
-<p>vehiculos works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 mt-5 mb-5" *ngFor="let vehiculo of vehiculos">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">{{ vehiculo.marca }} {{ vehiculo.modelo}} {{vehiculo.anio}}</h6>
+                    <p class="card-text">{{ vehiculo.descripcion }}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
