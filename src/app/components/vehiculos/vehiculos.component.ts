@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Vehiculo } from './model/vehiculo';
+import { VEHICULOS } from './vehiculo.json';
 
 @Component({
   selector: 'app-vehiculos',
@@ -9,15 +10,12 @@ import { Vehiculo } from './model/vehiculo';
 })
 export class VehiculosComponent implements OnInit {
 
-  vehiculos: Vehiculo[] = [
-    { id: 1, marca : 'Volkswagen', modelo: 'Golf R', anio: '2020', precio: 700900, descripcion: 'Variante deportiva del famoso modelo Golf.', imagen: 'img.jpg'},
-    { id: 1, marca : 'Audi', modelo: 'R8 V10 Plus', anio: '2020', precio: 2500000, descripcion: 'Auto deportivo con un motor trasero con 600Hp.', imagen: 'img.jpg'},
-    { id: 1, marca : 'SEAT', modelo: 'Leon Cupra 290', anio: '2020', precio: 510900, descripcion: 'Hot-Hatch que esconde un 2.0l t, con una caja DSG de 7 relaciones.', imagen: 'img.jpg'}
-  ];
+  vehiculos: Vehiculo[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.vehiculos = VEHICULOS;
   }
 
 }
