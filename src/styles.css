@@ -2,3 +2,22 @@
 html{
     font-size: 15px;
 }
+
+/*Cuando el cursos pase por encima se pondra el borde gris*/
+.card:hover{
+    box-shadow: 0 0 10px gray;
+}
+
+.bg-primary{
+    background-color: #dc3545 !important;
+}
+
+.text-primary{
+    color: #dc3545 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}

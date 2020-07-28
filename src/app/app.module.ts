@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 // Importar rutas
 import { ROUTES } from './app.routes';
@@ -15,7 +16,8 @@ import { ROUTES } from './app.routes';
     AppComponent,
     InicioComponent,
     VehiculosComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
