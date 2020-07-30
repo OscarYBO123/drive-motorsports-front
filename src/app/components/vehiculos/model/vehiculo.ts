@@ -1,9 +1,10 @@
 export class Vehiculo {
-    id: number;
-    marca: string;
-    modelo: string;
-    anio: string;
-    precio: number;
-    descripcion: string;
-    imagen: string;
+    id_vehiculo: number;
+	modelo: string;
+	anio: string;
+	marca: string;
+    km: number;
+    transmision: string;
+	descripcion: string;
+	imagen: string;
 }

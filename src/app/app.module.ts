@@ -7,6 +7,9 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { VehiculoService } from "./components/vehiculos/service/vehiculo.service";
+//Se agrega import para poder conectar al fron con el back
+import { HttpClientModule } from "@angular/common/http";
 
 // Importar rutas
 import { ROUTES } from './app.routes';
@@ -21,9 +24,10 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, {useHash: true} )
   ],
-  providers: [],
+  providers: [VehiculoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
